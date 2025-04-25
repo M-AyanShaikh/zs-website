@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Web Design for Small Businesses</title>
+<style>
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.intake-button {
+    background-color: var(--red);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.intake-button:hover {
+    background-color: #cc0000;
+}
+
+    :root {
+      --red: #ff4d4d;
+      --orange: #ff9900;
+      --gray: #333;
+      --bg-light: #f9f9f9;
+      --bg-alt1: #fff6f6;
+      --bg-alt2: #fffdf5;
+      --bg-alt3: #f5faff;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--gray);
+      background: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--red), var(--orange));
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: var(--red);
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #fff2f2;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section:nth-of-type(2n) {
+      background: var(--bg-alt1);
+    }
+
+    section:nth-of-type(3n) {
+      background: var(--bg-alt2);
+    }
+
+    section:nth-of-type(4n) {
+      background: var(--bg-alt3);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .step, .service, .testimonial {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .testimonial {
+      font-style: italic;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin: 0.5rem;
+      background: var(--red);
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .button-link:hover {
+      background: #cc0000;
+    }
+
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="logo">zs.</div>
+        <a href="intake.html" class="intake-button">Fill Out Intake Form</a>
+      </div>
+      
+
+<header>
+  <h1>Custom Websites Built to Grow Your Business</h1>
+  <p>Mobile-friendly, modern, and built with care — we create websites that don’t just look good, but work for your business.</p>
+  <a href="#form" class="cta-button">👉 Start Your Website</a>
+</header>
+
+<section>
+  <h2>Who We Are</h2>
+  <p>We're a creative web design company that builds clean, high-converting websites for small businesses, entrepreneurs, and service providers. Whether you’re just starting or looking to upgrade, we handle every step from concept to launch — so you can focus on running your business.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="grid grid-2">
+    <div class="step"><strong>1. Discovery Call:</strong> We start with a conversation to understand your goals, business, and target audience. This lays the foundation for a tailored site.</div>
+    <div class="step"><strong>2. Feature Checklist:</strong> You select the website features you need — like booking, ecommerce, or chat — and we make it happen, no tech knowledge needed.</div>
+    <div class="step"><strong>3. Quote & Plan:</strong> We send a transparent quote and project timeline, so you know exactly what to expect from start to finish.</div>
+    <div class="step"><strong>4. Design Preview:</strong> You get a mockup of your website to review and approve before we write any code, ensuring it matches your vision.</div>
+    <div class="step"><strong>5. Development:</strong> We build your site using best practices — fast, mobile-friendly, and optimized for conversions and SEO.</div>
+    <div class="step"><strong>6. Launch Day:</strong> We handle all the launch logistics so your site goes live smoothly — ready to attract visitors and grow your business.</div>
+    <div class="step"><strong>7. Ongoing Support:</strong> If you want, we offer monthly updates, security checks, and SEO help to keep your site working hard.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="grid grid-2">
+    <div class="service"><strong>Custom Website Design:</strong> Fully tailored designs that reflect your unique brand and attract the right audience.</div>
+    <div class="service"><strong>E-Commerce Sites:</strong> Sell online with a secure, easy-to-manage shop designed to boost customer trust and drive sales.</div>
+    <div class="service"><strong>Mobile Optimization:</strong> Every site we build is responsive, so it looks amazing on phones, tablets, and desktops.</div>
+    <div class="service"><strong>Booking Tools:</strong> Allow clients to schedule appointments or services with seamless booking tools integrated directly into your site.</div>
+    <div class="service"><strong>SEO Optimization:</strong> We optimize your site for Google from day one, helping your business get discovered organically.</div>
+    <div class="service"><strong>Live Chat Integration:</strong> Engage visitors in real time with a chat system that can boost lead conversions and customer support.</div>
+    <div class="service"><strong>Admin Dashboard:</strong> Make changes easily without a developer — add content, update prices, or tweak details anytime.</div>
+    <div class="service"><strong>Blog & Testimonials:</strong> Share stories, updates, and feedback that build trust and keep your site fresh with new content.</div>
+    <div class="service"><strong>Social Media Integration:</strong> Sync your Instagram, Facebook, or TikTok feed right on your homepage to boost visibility.</div>
+    <div class="service"><strong>Logo & Brand Support:</strong> No branding yet? We can help with logos, color palettes, and visual identity to bring it all together.</div>
+  </div>
+</section>
+
+<section>
+  <h2>What Clients Say</h2>
+  <div class="grid grid-2">
+    <div class="testimonial">“My business doubled in calls after launching the new site. They made the process super easy.” — Amir H., Contractor</div>
+    <div class="testimonial">“The booking system works perfectly, and the design looks way better than I imagined.” — Laila P., Beauty Spa Owner</div>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto;">Final pricing depends on your features, content, and timeline. We quote based on your needs — no hidden fees, no bloated packages.</p>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="intake.html" class="button-link">👉 Build My Quote</a>
+    <a href="https://groundhoundutilitylocators.com" target="_blank" class="button-link">Sample Project 1</a>
+    <a href="https://goldenmedinsurance.com" target="_blank" class="button-link">Sample Project 2</a>
+    <a href="https://smalltownhatco.us" target="_blank" class="button-link">Sample Project 3</a>
+  </div>
+</section>
+
+<section id="form">
+  <h2>Start Your Website</h2>
+  <p style="text-align: center;">Fill out our quick form and we'll get started building your dream site.</p>
+  <div style="text-align: center; margin-top: 1rem;">
+    <a href="intake.html" class="intake-button">Fill Out Our Intake Form</a>
+</div>
+</section>
+
+<footer>
+  <p>Let's get your business online the right way. We'll walk you through every step — all you need to do is tell us what you need!</p>
+  <p>&copy; 2025 Web Design Co. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

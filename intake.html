@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Intake Form</title>
+  <style>
+    :root {
+      --red: #ff4d4d;
+      --gray: #333;
+      --bg: #f4f4f4;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+      color: var(--gray);
+    }
+
+    header.page-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--red);
+    }
+
+    .intake-button {
+      background-color: var(--red);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .intake-button:hover {
+      background-color: #cc0000;
+    }
+
+    .container {
+      max-width: 700px;
+      background: white;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--red);
+      margin-bottom: 2rem;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1.2rem;
+    }
+
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--red);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 2rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: block;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="logo">zs.</div>
+    <a href="index.html" class="intake-button">← Back to Home</a>
+  </header>
+
+  <div class="container">
+    <h1>Client Intake Form</h1>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="hidden" name="_next" value="confirmation.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label>Full Name</label>
+      <input type="text" name="Full Name" required />
+
+      <label>Email</label>
+      <input type="email" name="Email" required />
+
+      <label>Phone Number</label>
+      <input type="tel" name="Phone Number" />
+
+      <label>Business Name</label>
+      <input type="text" name="Business Name" />
+
+      <label>Business Type</label>
+      <input type="text" name="Business Type" />
+
+      <label>Preferred Domain (if any)</label>
+      <input type="text" name="Preferred Domain" />
+
+      <label>Expected Pages (e.g., Home, About, Contact)</label>
+      <input type="text" name="Page Estimate" />
+
+      <label>Do you already have a logo, brand colors, or branding material?</label>
+      <textarea name="Brand Assets"></textarea>
+
+      <label>Will you provide all the text and images for the site?</label>
+      <textarea name="Text & Images Provided"></textarea>
+
+      <label>Ideal Launch Date?</label>
+      <input type="text" name="Launch Date" />
+
+      <label>Do you already own a domain and hosting plan?</label>
+      <textarea name="Domain Hosting Status"></textarea>
+
+      <label>Would you like ongoing maintenance and updates after launch?</label>
+      <textarea name="Ongoing Maintenance"></textarea>
+
+      <label>Websites you like or want yours to be inspired by:</label>
+      <textarea name="Inspirational Sites"></textarea>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </div>
+
+</body>
+</html>
